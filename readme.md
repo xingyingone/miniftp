@@ -3,7 +3,8 @@
 目前实现的功能：登陆校验、空闲断开、连接数限制、断点续传、断点下载、空闲断开、删除创建文件、创建删除目录、重命名、目录切换
 
 用到的技术：select模型超时检测，多进程模型处理数据连接和命令连接，主被动模式处理NAT影响，自定义nobody进程和服务进程间通信协议，ALARM信号实现空闲断开，封装writen/readn解决TCP粘包。双 Hash表解决ip最大连接数，开链法解决Hash冲突，内存池管理哈希节点内存。
-		
+
+# 项目架构 #
 整个项目主要有三个模块组成：ftp协议解析模块、内部协议解析模块、进程间通信模块
 ```
 tree /f
@@ -74,3 +75,4 @@ ftp服务进程                                    |        nobody进程
 
 ## 关闭FTP ##
 当客户端发出退出命令时，控制连接被关闭，FTP服务结束
+If you find some bugs in codes, please contact me via Email: whuxingying@163@163.com
