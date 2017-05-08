@@ -75,4 +75,3 @@ ftp服务进程                                    |        nobody进程
 
 ## 关闭FTP ##
 当客户端发出退出命令时，控制连接被关闭，FTP服务结束
-If you find some bugs in codes, please contact me via Email: whuxingying@163@163.com
